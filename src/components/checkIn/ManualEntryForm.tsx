@@ -1,4 +1,3 @@
-import type { FormEvent } from 'react';
 import { Keyboard } from 'lucide-react';
 
 import { Button } from '@/components/ui/Button';
@@ -6,7 +5,7 @@ import { Input } from '@/components/ui/Input';
 
 type ManualEntryFormProps = {
   onChange: (value: string) => void;
-  onSubmit: (event: FormEvent<HTMLFormElement>) => void;
+  onSubmit: (event: { preventDefault: () => void }) => void;
   value: string;
 };
 
