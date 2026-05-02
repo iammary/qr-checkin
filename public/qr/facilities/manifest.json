@@ -1,0 +1,505 @@
+{
+  "generatedAt": "2026-05-02T11:05:19.771Z",
+  "items": [
+    {
+      "file": "facility-001.svg",
+      "id": "facility-001",
+      "payload": "facility-001"
+    },
+    {
+      "file": "facility-002.svg",
+      "id": "facility-002",
+      "payload": "facility-002"
+    },
+    {
+      "file": "facility-003.svg",
+      "id": "facility-003",
+      "payload": "facility-003"
+    },
+    {
+      "file": "facility-004.svg",
+      "id": "facility-004",
+      "payload": "facility-004"
+    },
+    {
+      "file": "facility-005.svg",
+      "id": "facility-005",
+      "payload": "facility-005"
+    },
+    {
+      "file": "facility-006.svg",
+      "id": "facility-006",
+      "payload": "facility-006"
+    },
+    {
+      "file": "facility-007.svg",
+      "id": "facility-007",
+      "payload": "facility-007"
+    },
+    {
+      "file": "facility-008.svg",
+      "id": "facility-008",
+      "payload": "facility-008"
+    },
+    {
+      "file": "facility-009.svg",
+      "id": "facility-009",
+      "payload": "facility-009"
+    },
+    {
+      "file": "facility-010.svg",
+      "id": "facility-010",
+      "payload": "facility-010"
+    },
+    {
+      "file": "facility-011.svg",
+      "id": "facility-011",
+      "payload": "facility-011"
+    },
+    {
+      "file": "facility-012.svg",
+      "id": "facility-012",
+      "payload": "facility-012"
+    },
+    {
+      "file": "facility-013.svg",
+      "id": "facility-013",
+      "payload": "facility-013"
+    },
+    {
+      "file": "facility-014.svg",
+      "id": "facility-014",
+      "payload": "facility-014"
+    },
+    {
+      "file": "facility-015.svg",
+      "id": "facility-015",
+      "payload": "facility-015"
+    },
+    {
+      "file": "facility-016.svg",
+      "id": "facility-016",
+      "payload": "facility-016"
+    },
+    {
+      "file": "facility-017.svg",
+      "id": "facility-017",
+      "payload": "facility-017"
+    },
+    {
+      "file": "facility-018.svg",
+      "id": "facility-018",
+      "payload": "facility-018"
+    },
+    {
+      "file": "facility-019.svg",
+      "id": "facility-019",
+      "payload": "facility-019"
+    },
+    {
+      "file": "facility-020.svg",
+      "id": "facility-020",
+      "payload": "facility-020"
+    },
+    {
+      "file": "facility-021.svg",
+      "id": "facility-021",
+      "payload": "facility-021"
+    },
+    {
+      "file": "facility-022.svg",
+      "id": "facility-022",
+      "payload": "facility-022"
+    },
+    {
+      "file": "facility-023.svg",
+      "id": "facility-023",
+      "payload": "facility-023"
+    },
+    {
+      "file": "facility-024.svg",
+      "id": "facility-024",
+      "payload": "facility-024"
+    },
+    {
+      "file": "facility-025.svg",
+      "id": "facility-025",
+      "payload": "facility-025"
+    },
+    {
+      "file": "facility-026.svg",
+      "id": "facility-026",
+      "payload": "facility-026"
+    },
+    {
+      "file": "facility-027.svg",
+      "id": "facility-027",
+      "payload": "facility-027"
+    },
+    {
+      "file": "facility-028.svg",
+      "id": "facility-028",
+      "payload": "facility-028"
+    },
+    {
+      "file": "facility-029.svg",
+      "id": "facility-029",
+      "payload": "facility-029"
+    },
+    {
+      "file": "facility-030.svg",
+      "id": "facility-030",
+      "payload": "facility-030"
+    },
+    {
+      "file": "facility-031.svg",
+      "id": "facility-031",
+      "payload": "facility-031"
+    },
+    {
+      "file": "facility-032.svg",
+      "id": "facility-032",
+      "payload": "facility-032"
+    },
+    {
+      "file": "facility-033.svg",
+      "id": "facility-033",
+      "payload": "facility-033"
+    },
+    {
+      "file": "facility-034.svg",
+      "id": "facility-034",
+      "payload": "facility-034"
+    },
+    {
+      "file": "facility-035.svg",
+      "id": "facility-035",
+      "payload": "facility-035"
+    },
+    {
+      "file": "facility-036.svg",
+      "id": "facility-036",
+      "payload": "facility-036"
+    },
+    {
+      "file": "facility-037.svg",
+      "id": "facility-037",
+      "payload": "facility-037"
+    },
+    {
+      "file": "facility-038.svg",
+      "id": "facility-038",
+      "payload": "facility-038"
+    },
+    {
+      "file": "facility-039.svg",
+      "id": "facility-039",
+      "payload": "facility-039"
+    },
+    {
+      "file": "facility-040.svg",
+      "id": "facility-040",
+      "payload": "facility-040"
+    },
+    {
+      "file": "facility-041.svg",
+      "id": "facility-041",
+      "payload": "facility-041"
+    },
+    {
+      "file": "facility-042.svg",
+      "id": "facility-042",
+      "payload": "facility-042"
+    },
+    {
+      "file": "facility-043.svg",
+      "id": "facility-043",
+      "payload": "facility-043"
+    },
+    {
+      "file": "facility-044.svg",
+      "id": "facility-044",
+      "payload": "facility-044"
+    },
+    {
+      "file": "facility-045.svg",
+      "id": "facility-045",
+      "payload": "facility-045"
+    },
+    {
+      "file": "facility-046.svg",
+      "id": "facility-046",
+      "payload": "facility-046"
+    },
+    {
+      "file": "facility-047.svg",
+      "id": "facility-047",
+      "payload": "facility-047"
+    },
+    {
+      "file": "facility-048.svg",
+      "id": "facility-048",
+      "payload": "facility-048"
+    },
+    {
+      "file": "facility-049.svg",
+      "id": "facility-049",
+      "payload": "facility-049"
+    },
+    {
+      "file": "facility-050.svg",
+      "id": "facility-050",
+      "payload": "facility-050"
+    },
+    {
+      "file": "facility-051.svg",
+      "id": "facility-051",
+      "payload": "facility-051"
+    },
+    {
+      "file": "facility-052.svg",
+      "id": "facility-052",
+      "payload": "facility-052"
+    },
+    {
+      "file": "facility-053.svg",
+      "id": "facility-053",
+      "payload": "facility-053"
+    },
+    {
+      "file": "facility-054.svg",
+      "id": "facility-054",
+      "payload": "facility-054"
+    },
+    {
+      "file": "facility-055.svg",
+      "id": "facility-055",
+      "payload": "facility-055"
+    },
+    {
+      "file": "facility-056.svg",
+      "id": "facility-056",
+      "payload": "facility-056"
+    },
+    {
+      "file": "facility-057.svg",
+      "id": "facility-057",
+      "payload": "facility-057"
+    },
+    {
+      "file": "facility-058.svg",
+      "id": "facility-058",
+      "payload": "facility-058"
+    },
+    {
+      "file": "facility-059.svg",
+      "id": "facility-059",
+      "payload": "facility-059"
+    },
+    {
+      "file": "facility-060.svg",
+      "id": "facility-060",
+      "payload": "facility-060"
+    },
+    {
+      "file": "facility-061.svg",
+      "id": "facility-061",
+      "payload": "facility-061"
+    },
+    {
+      "file": "facility-062.svg",
+      "id": "facility-062",
+      "payload": "facility-062"
+    },
+    {
+      "file": "facility-063.svg",
+      "id": "facility-063",
+      "payload": "facility-063"
+    },
+    {
+      "file": "facility-064.svg",
+      "id": "facility-064",
+      "payload": "facility-064"
+    },
+    {
+      "file": "facility-065.svg",
+      "id": "facility-065",
+      "payload": "facility-065"
+    },
+    {
+      "file": "facility-066.svg",
+      "id": "facility-066",
+      "payload": "facility-066"
+    },
+    {
+      "file": "facility-067.svg",
+      "id": "facility-067",
+      "payload": "facility-067"
+    },
+    {
+      "file": "facility-068.svg",
+      "id": "facility-068",
+      "payload": "facility-068"
+    },
+    {
+      "file": "facility-069.svg",
+      "id": "facility-069",
+      "payload": "facility-069"
+    },
+    {
+      "file": "facility-070.svg",
+      "id": "facility-070",
+      "payload": "facility-070"
+    },
+    {
+      "file": "facility-071.svg",
+      "id": "facility-071",
+      "payload": "facility-071"
+    },
+    {
+      "file": "facility-072.svg",
+      "id": "facility-072",
+      "payload": "facility-072"
+    },
+    {
+      "file": "facility-073.svg",
+      "id": "facility-073",
+      "payload": "facility-073"
+    },
+    {
+      "file": "facility-074.svg",
+      "id": "facility-074",
+      "payload": "facility-074"
+    },
+    {
+      "file": "facility-075.svg",
+      "id": "facility-075",
+      "payload": "facility-075"
+    },
+    {
+      "file": "facility-076.svg",
+      "id": "facility-076",
+      "payload": "facility-076"
+    },
+    {
+      "file": "facility-077.svg",
+      "id": "facility-077",
+      "payload": "facility-077"
+    },
+    {
+      "file": "facility-078.svg",
+      "id": "facility-078",
+      "payload": "facility-078"
+    },
+    {
+      "file": "facility-079.svg",
+      "id": "facility-079",
+      "payload": "facility-079"
+    },
+    {
+      "file": "facility-080.svg",
+      "id": "facility-080",
+      "payload": "facility-080"
+    },
+    {
+      "file": "facility-081.svg",
+      "id": "facility-081",
+      "payload": "facility-081"
+    },
+    {
+      "file": "facility-082.svg",
+      "id": "facility-082",
+      "payload": "facility-082"
+    },
+    {
+      "file": "facility-083.svg",
+      "id": "facility-083",
+      "payload": "facility-083"
+    },
+    {
+      "file": "facility-084.svg",
+      "id": "facility-084",
+      "payload": "facility-084"
+    },
+    {
+      "file": "facility-085.svg",
+      "id": "facility-085",
+      "payload": "facility-085"
+    },
+    {
+      "file": "facility-086.svg",
+      "id": "facility-086",
+      "payload": "facility-086"
+    },
+    {
+      "file": "facility-087.svg",
+      "id": "facility-087",
+      "payload": "facility-087"
+    },
+    {
+      "file": "facility-088.svg",
+      "id": "facility-088",
+      "payload": "facility-088"
+    },
+    {
+      "file": "facility-089.svg",
+      "id": "facility-089",
+      "payload": "facility-089"
+    },
+    {
+      "file": "facility-090.svg",
+      "id": "facility-090",
+      "payload": "facility-090"
+    },
+    {
+      "file": "facility-091.svg",
+      "id": "facility-091",
+      "payload": "facility-091"
+    },
+    {
+      "file": "facility-092.svg",
+      "id": "facility-092",
+      "payload": "facility-092"
+    },
+    {
+      "file": "facility-093.svg",
+      "id": "facility-093",
+      "payload": "facility-093"
+    },
+    {
+      "file": "facility-094.svg",
+      "id": "facility-094",
+      "payload": "facility-094"
+    },
+    {
+      "file": "facility-095.svg",
+      "id": "facility-095",
+      "payload": "facility-095"
+    },
+    {
+      "file": "facility-096.svg",
+      "id": "facility-096",
+      "payload": "facility-096"
+    },
+    {
+      "file": "facility-097.svg",
+      "id": "facility-097",
+      "payload": "facility-097"
+    },
+    {
+      "file": "facility-098.svg",
+      "id": "facility-098",
+      "payload": "facility-098"
+    },
+    {
+      "file": "facility-099.svg",
+      "id": "facility-099",
+      "payload": "facility-099"
+    },
+    {
+      "file": "facility-100.svg",
+      "id": "facility-100",
+      "payload": "facility-100"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Facility Check-In</title>
+  <desc id="desc">A check mark inside a QR-style facility badge.</desc>
+  <rect width="512" height="512" rx="96" fill="#176b4d" />
+  <rect x="96" y="96" width="92" height="92" rx="18" fill="#ffffff" />
+  <rect x="324" y="96" width="92" height="92" rx="18" fill="#ffffff" />
+  <rect x="96" y="324" width="92" height="92" rx="18" fill="#ffffff" />
+  <rect x="224" y="108" width="44" height="44" rx="10" fill="#d7efe4" />
+  <rect x="244" y="196" width="72" height="44" rx="10" fill="#d7efe4" />
+  <rect x="360" y="244" width="44" height="44" rx="10" fill="#d7efe4" />
+  <rect x="240" y="344" width="44" height="44" rx="10" fill="#d7efe4" />
+  <path d="M206 274l42 42 86-102" fill="none" stroke="#ffffff" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

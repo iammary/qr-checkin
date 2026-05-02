@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+.next
+out
+coverage
+storybook-static
+node_modules
+tsconfig.tsbuildinfo
+*.log
+.env
+.env.*
+!.env.example
+.certificates

@@ -1,0 +1,72 @@
+{
+  "name": "qr-checkin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "dev:https": "next dev --experimental-https",
+    "dev:phone": "bun scripts/runPhoneDev.ts",
+    "build": "next build && bun scripts/buildServiceWorker.ts",
+    "icons:generate": "bun scripts/generatePwaIcons.ts",
+    "lint": "eslint ./.storybook ./scripts ./src next.config.ts vitest.config.ts",
+    "qr:generate": "bun scripts/generateFacilityQrCodes.ts",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build",
+    "serve:phone": "bun scripts/serveStaticPhone.ts",
+    "test": "vitest run --coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "html5-qrcode": "^2.3.8",
+    "lucide-react": "^1.14.0",
+    "next": "^16.2.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "qrcode": "^1.5.4",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^10.3.6",
+    "@storybook/addon-docs": "^10.3.6",
+    "@storybook/addon-themes": "^10.3.6",
+    "@storybook/addon-vitest": "^10.3.6",
+    "@storybook/nextjs-vite": "^10.3.6",
+    "@storybook/test": "^8.6.15",
+    "@tailwindcss/postcss": "^4.2.4",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^25.6.0",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "@vitest/coverage-v8": "^4.1.5",
+    "bun-types": "^1.3.13",
+    "eslint": "^10.3.0",
+    "eslint-config-next": "^16.2.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-sonarjs": "^4.0.3",
+    "eslint-plugin-unicorn": "^64.0.0",
+    "happy-dom": "^20.9.0",
+    "lint-staged": "^16.4.0",
+    "postcss": "^8.5.13",
+    "prettier": "^3.8.3",
+    "storybook": "^10.3.6",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md}": [
+      "prettier --write"
+    ]
+  }
+}
