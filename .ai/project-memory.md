@@ -13,6 +13,7 @@ This document captures durable lessons for the Facility Check-In PWA. Keep perso
 ## Frontend Lessons
 
 - Keep scanner/camera behavior isolated behind a QR scanner component. Check-in validation and result creation belong in pure domain helpers.
+- For enum-like domain strings, use exported uppercase `as const` objects with derived value-union type aliases instead of hand-written string unions.
 - Manual facility-code entry is the reliability path and must stay visible even when camera permission, secure context, or device support fails.
 - Offline UI should be explicit: bundled manual validation can work after the app is loaded; camera access still depends on browser/device behavior.
 - Shared UI components live under `src/components/ui/<ComponentName>/` with colocated stories and tests where useful.

@@ -4,7 +4,7 @@
 
 Before changing the project, review [`.ai/project-memory.md`](.ai/project-memory.md). Assistant-specific entrypoints such as `AGENTS.md` should stay thin pointers to this shared guidance.
 
-When a task touches shared UI primitives, Storybook coverage, or reusable frontend conventions, read [`.ai/skills/ui-engineer.md`](.ai/skills/ui-engineer.md). When generating QR image assets from JSON, read [`.ai/skills/qr-generator.md`](.ai/skills/qr-generator.md).
+When a task touches shared UI primitives, Storybook coverage, or reusable frontend conventions, read [`.ai/skills/ui-engineer.md`](.ai/skills/ui-engineer.md). When generating QR image assets from JSON, read [`.ai/skills/qr-generator.md`](.ai/skills/qr-generator.md). When creating, amending, or suggesting Git commit messages, read [`.ai/skills/conventional-commits.md`](.ai/skills/conventional-commits.md).
 
 ## TypeScript And Structure
 
@@ -13,6 +13,7 @@ When a task touches shared UI primitives, Storybook coverage, or reusable fronte
 - Next.js-required default exports must still export arrow-function components.
 - Use arrow functions for functions and components.
 - Do not use `React.FC` or default `React` imports.
+- Prefer exported uppercase `as const` objects plus derived type aliases for enum-like string sets. Use uppercase object names and keys, for example `MEMBERSHIP_STATUS.ACTIVE`, and derive types from object values instead of hand-written string unions.
 - Keep route `page.tsx` files thin; render a named page component.
 - Put domain logic in `src/lib`, hooks in `src/hooks` or a domain folder, shared UI in `src/components/ui`, and feature UI in `src/components/checkIn`.
 - Shared domain type files should use a `.type.ts` suffix.
