@@ -16,6 +16,7 @@ This document captures durable lessons for the Facility Check-In PWA. Keep perso
 - For enum-like domain strings, use exported uppercase `as const` objects with derived value-union type aliases instead of hand-written string unions.
 - Manual facility-code entry is the reliability path and must stay visible even when camera permission, secure context, or device support fails.
 - Offline UI should be explicit: bundled manual validation can work after the app is loaded; camera access still depends on browser/device behavior.
+- Keep front-facing app copy free of local development details such as HTTPS, localhost, secure contexts, or dev commands; reserve that guidance for README and developer docs.
 - Shared UI components live under `src/components/ui/<ComponentName>/` with colocated stories and tests where useful.
 - Use semantic tones for check-in states: `success` for confirmed entry, `warning` for offline or permission recovery, `danger` for invalid codes, and `info` for scanner guidance.
 - Keep page files as orchestration. Feature presentation belongs under `src/components/checkIn`, and domain state belongs under `src/lib/checkIn`.

@@ -8,7 +8,7 @@ describe('RecoveryNotice', () => {
   it('shows invalid facility recovery copy', () => {
     const error: CheckInError = {
       code: 'invalid_facility',
-      message: 'That facility code was not found.',
+      message: 'That facility ID was not found.',
       recovery: 'Try facility-001.',
     };
 
@@ -26,7 +26,7 @@ describe('RecoveryNotice', () => {
   it('shows default camera guidance while online', () => {
     render(<RecoveryNotice online />);
 
-    expect(screen.getByRole('alert')).toHaveTextContent('Camera scanning needs a secure browser context');
+    expect(screen.getByRole('alert')).toHaveTextContent('Camera scanning needs browser permission');
   });
 
   it('uses warning tone for camera permission errors', () => {

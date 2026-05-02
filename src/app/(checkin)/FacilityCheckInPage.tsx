@@ -42,10 +42,10 @@ export const FacilityCheckInPage = () => {
         <header className="grid gap-4">
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div className="grid max-w-2xl gap-2">
-              <Badge status="info">Facility Check-In PWA</Badge>
-              <Typography scale="title">Scan or enter a facility code</Typography>
+              <Badge status="info">Facility check-in</Badge>
+              <Typography scale="title">Scan a QR code or enter a facility ID</Typography>
               <Typography tone="muted">
-                Validate the local facility list and produce a staff-ready confirmation screen. Manual entry works even when camera access is unavailable.
+                Confirm a facility check-in and show the result to staff if requested. If camera access is blocked or unavailable, manual entry still works.
               </Typography>
             </div>
             <Badge status={state.online ? 'success' : 'warning'}>{state.online ? 'Online' : 'Offline'}</Badge>
@@ -70,8 +70,8 @@ export const FacilityCheckInPage = () => {
             <section className="grid content-start gap-5">
               <Card className="grid gap-4" padding="md">
                 <CardHeader>
-                  <CardTitle>Manual fallback</CardTitle>
-                  <CardDescription>Type the facility ID if the camera is blocked, unavailable, or inconvenient.</CardDescription>
+                  <CardTitle>Manual entry</CardTitle>
+                  <CardDescription>Type the facility ID if scanning is unavailable or inconvenient.</CardDescription>
                 </CardHeader>
                 <ManualEntryForm onChange={updateManualCode} onSubmit={submitManualCode} value={state.manualCode} />
               </Card>

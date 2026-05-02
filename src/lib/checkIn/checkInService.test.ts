@@ -73,7 +73,7 @@ describe('checkInService', () => {
     expect(result).toEqual({
       error: {
         code: 'invalid_facility',
-        message: 'That facility code was not found.',
+        message: 'That facility ID was not found.',
         recovery: 'Check the QR code or type the facility ID exactly, for example facility-001.',
       },
       ok: false,
@@ -93,9 +93,9 @@ describe('checkInService', () => {
 
   it('creates camera recovery errors', () => {
     expect(createCameraError('camera_permission_denied').recovery).toContain('Manual entry still works');
-    expect(createCameraError('camera_unavailable').message).toContain('No usable camera');
+    expect(createCameraError('camera_unavailable').message).toContain('Camera access is unavailable');
     expect(createCameraError('offline_camera_limited').message).toBe('You are offline.');
-    expect(createCameraError('scanner_error').recovery).toContain('HTTPS');
+    expect(createCameraError('scanner_error').recovery).toContain('manual entry');
   });
 
   it('preserves custom camera recovery messages', () => {

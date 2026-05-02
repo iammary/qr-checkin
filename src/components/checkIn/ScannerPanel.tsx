@@ -49,8 +49,8 @@ export const ScannerPanel = ({ enabled, onIssue, onScan, onSetEnabled, onStatusC
       <CardHeader>
         <div className="flex items-start justify-between gap-3">
           <div className="grid gap-1">
-            <CardTitle>Scan QR code</CardTitle>
-            <CardDescription>Use a facility QR code that contains plain text like facility-001.</CardDescription>
+            <CardTitle>Scan facility QR code</CardTitle>
+            <CardDescription>Use a facility QR code or enter the facility ID manually.</CardDescription>
           </div>
           <Badge status={getScannerBadgeStatus(status)}>{statusLabel[status]}</Badge>
         </div>
@@ -62,13 +62,13 @@ export const ScannerPanel = ({ enabled, onIssue, onScan, onSetEnabled, onStatusC
         <div className="grid aspect-square place-items-center rounded-lg border border-dashed border-border bg-muted/45 p-6 text-center">
           <div className="grid max-w-64 gap-3">
             <Camera className="mx-auto size-10 text-primary" />
-            <p className="text-sm leading-6 text-muted-foreground">Start the camera when you are ready to scan. Manual entry stays available below.</p>
+            <p className="text-sm leading-6 text-muted-foreground">Start the camera when you are ready. Manual entry stays available.</p>
           </div>
         </div>
       )}
 
-      {cameraBlocked ? <Alert tone="warning">Camera access requires HTTPS or localhost. Use the HTTPS dev command for device testing.</Alert> : null}
-      {online ? null : <Alert tone="warning">Offline mode is active. Camera scanning may still work in some browsers, but manual entry is the dependable path.</Alert>}
+      {cameraBlocked ? <Alert tone="warning">Camera access is blocked right now. Use manual entry below.</Alert> : null}
+      {online ? null : <Alert tone="warning">Offline mode is active. Manual entry is the dependable path.</Alert>}
 
       <Button
         className="w-full"

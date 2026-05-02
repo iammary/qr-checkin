@@ -28,7 +28,7 @@ export const ManualEntryForm = ({ onChange, onSubmit, value }: ManualEntryFormPr
         value={value}
       />
       <p className="text-sm leading-6 text-muted-foreground" id="facility-code-hint">
-        QR content can be plain facility ID text. Try facility-001.
+        Enter a facility ID such as facility-001.
       </p>
     </div>
     <Button className="w-full" size="lg" type="submit">

@@ -6,6 +6,6 @@ describe('CheckInLoading', () => {
   it('renders accessible loading placeholders', () => {
     render(<CheckInLoading />);
 
-    expect(screen.getByRole('status', { name: 'Loading heading' })).toBeInTheDocument();
+    expect(screen.getByRole('status', { name: 'Loading check-in' })).toBeInTheDocument();
   });
 });

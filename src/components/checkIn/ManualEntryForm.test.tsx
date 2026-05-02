@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 import { ManualEntryForm } from './ManualEntryForm';
 
 describe('ManualEntryForm', () => {
-  it('submits the typed facility code', async () => {
+  it('submits the typed facility ID', async () => {
     const user = userEvent.setup();
     const handleChange = vi.fn();
     const handleSubmit = vi.fn((event: { preventDefault: () => void }) => event.preventDefault());

@@ -5,7 +5,7 @@ import { getCurrentMember, getFacilities } from './facilities';
 
 const invalidFacilityError: CheckInError = {
   code: 'invalid_facility',
-  message: 'That facility code was not found.',
+  message: 'That facility ID was not found.',
   recovery: 'Try another code.',
 };
 

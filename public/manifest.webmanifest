@@ -1,7 +1,7 @@
 {
   "name": "Facility Check-In",
   "short_name": "Check-In",
-  "description": "Scan or enter a gym facility code and show a staff-ready check-in confirmation.",
+  "description": "Scan a facility QR code or enter a facility ID to confirm check-in.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

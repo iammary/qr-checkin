@@ -47,7 +47,7 @@ vi.mock('@/components/checkIn/ScannerPanel', () => ({
             {
               code: 'camera_unavailable',
               message: 'Camera is unavailable.',
-              recovery: 'Use manual facility-code entry.',
+              recovery: 'Use manual facility ID entry.',
             },
             'unavailable',
           )
@@ -83,7 +83,7 @@ describe('FacilityCheckInPage', () => {
 
     render(<FacilityCheckInPage />);
 
-    expect(screen.getByRole('status', { name: 'Loading heading' })).toBeInTheDocument();
+    expect(screen.getByRole('status', { name: 'Loading check-in' })).toBeInTheDocument();
   });
 
   it('shows offline status when the browser is offline', () => {
@@ -114,7 +114,7 @@ describe('FacilityCheckInPage', () => {
 
     render(<FacilityCheckInPage />);
 
-    await waitFor(() => expect(screen.getByRole('heading', { name: 'Scan or enter a facility code' })).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByRole('heading', { name: 'Scan a QR code or enter a facility ID' })).toBeInTheDocument());
 
     await user.type(screen.getByLabelText('Facility ID'), 'facility-001');
     await user.click(screen.getByRole('button', { name: /check in manually/i }));
@@ -124,7 +124,7 @@ describe('FacilityCheckInPage', () => {
 
     await user.click(screen.getByRole('button', { name: /start another check-in/i }));
 
-    expect(screen.getByRole('heading', { name: 'Scan or enter a facility code' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Scan a QR code or enter a facility ID' })).toBeInTheDocument();
     expect(screen.getByLabelText('Facility ID')).toHaveValue('');
   });
 
@@ -138,13 +138,13 @@ describe('FacilityCheckInPage', () => {
     await user.type(screen.getByLabelText('Facility ID'), 'facility-nope');
     await user.click(screen.getByRole('button', { name: /check in manually/i }));
 
-    const invalidCodeAlert = screen.getByText('That facility code was not found.').closest('[role="alert"]');
+    const invalidCodeAlert = screen.getByText('That facility ID was not found.').closest('[role="alert"]');
 
-    expect(invalidCodeAlert).toHaveTextContent('That facility code was not found.');
+    expect(invalidCodeAlert).toHaveTextContent('That facility ID was not found.');
     expect(invalidCodeAlert).toHaveTextContent('facility-001');
   });
 
-  it('checks in a scanned facility code and stops the scanner', async () => {
+  it('checks in a scanned facility ID and stops the scanner', async () => {
     const user = userEvent.setup();
 
     render(<FacilityCheckInPage />);
@@ -173,6 +173,6 @@ describe('FacilityCheckInPage', () => {
 
     expect(screen.getByText('Scanner disabled')).toBeInTheDocument();
     expect(screen.getByText('Camera is unavailable.')).toBeInTheDocument();
-    expect(screen.getByText('Use manual facility-code entry.')).toBeInTheDocument();
+    expect(screen.getByText('Use manual facility ID entry.')).toBeInTheDocument();
   });
 });
