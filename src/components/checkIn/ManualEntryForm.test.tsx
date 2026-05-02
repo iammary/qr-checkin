@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react';
-import type { FormEvent } from 'react';
 import userEvent from '@testing-library/user-event';
 
 import { ManualEntryForm } from './ManualEntryForm';
@@ -8,7 +7,7 @@ describe('ManualEntryForm', () => {
   it('submits the typed facility code', async () => {
     const user = userEvent.setup();
     const handleChange = vi.fn();
-    const handleSubmit = vi.fn((event: FormEvent<HTMLFormElement>) => event.preventDefault());
+    const handleSubmit = vi.fn((event: { preventDefault: () => void }) => event.preventDefault());
 
     render(<ManualEntryForm onChange={handleChange} onSubmit={handleSubmit} value="" />);
 

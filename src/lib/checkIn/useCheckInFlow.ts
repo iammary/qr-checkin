@@ -1,6 +1,3 @@
-'use client';
-
-import type { FormEvent } from 'react';
 import { useCallback, useEffect, useReducer } from 'react';
 
 import type { CheckInError, CheckInSource, CurrentMember, ScannerStatus } from './checkIn.type';
@@ -16,6 +13,10 @@ type UseCheckInFlowOptions = {
   initialOnline?: boolean;
   now?: () => Date;
   user?: CurrentMember;
+};
+
+type PreventableSubmitEvent = {
+  preventDefault: () => void;
 };
 
 export const useCheckInFlow = ({ initialOnline, now = defaultNow, user = getCurrentMember() }: UseCheckInFlowOptions = {}) => {
@@ -62,7 +63,7 @@ export const useCheckInFlow = ({ initialOnline, now = defaultNow, user = getCurr
   );
 
   const submitManualCode = useCallback(
-    (event?: FormEvent<HTMLFormElement>) => {
+    (event?: PreventableSubmitEvent) => {
       event?.preventDefault();
       submitCode(state.manualCode, 'manual');
     },

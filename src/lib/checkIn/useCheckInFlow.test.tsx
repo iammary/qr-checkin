@@ -1,5 +1,4 @@
 import { act, renderHook, waitFor } from '@testing-library/react';
-import type { FormEvent } from 'react';
 import { renderToString } from 'react-dom/server';
 
 import { getNavigatorOnlineStatus, useCheckInFlow } from './useCheckInFlow';
@@ -79,7 +78,7 @@ describe('useCheckInFlow', () => {
     act(() =>
       result.current.submitManualCode({
         preventDefault,
-      } as unknown as FormEvent<HTMLFormElement>),
+      }),
     );
 
     expect(preventDefault).toHaveBeenCalled();
