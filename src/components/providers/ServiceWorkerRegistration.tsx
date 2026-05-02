@@ -18,7 +18,7 @@ export const ServiceWorkerRegistration = () => {
       try {
         await globalThis.navigator.serviceWorker.register('/sw.js');
       } catch {
-        // Offline support is best-effort; the check-in flow still runs with bundled data.
+        // Offline support is best-effort; the check-in flow still runs with saved facility data.
       }
     };
 

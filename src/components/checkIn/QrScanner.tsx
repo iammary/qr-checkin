@@ -35,7 +35,7 @@ export const QrScanner = ({ enabled, onIssue, onScan, onStatusChange }: QrScanne
     }
 
     if (!globalThis.isSecureContext) {
-      onIssue(createCameraError('camera_unavailable', 'Camera scanning requires HTTPS or localhost.'), 'unavailable');
+      onIssue(createCameraError('camera_unavailable', 'Camera access is blocked right now.'), 'unavailable');
       return;
     }
 

@@ -5,7 +5,7 @@ import '@/styles/globals.css';
 
 export const metadata: Metadata = {
   title: 'Facility Check-In',
-  description: 'A static PWA for validating gym facility check-ins by QR code or manual facility ID.',
+  description: 'Scan a facility QR code or enter a facility ID to confirm check-in.',
   manifest: '/manifest.webmanifest',
   icons: {
     apple: '/icons/apple-touch-icon.png',

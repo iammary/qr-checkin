@@ -6,7 +6,7 @@ const facilityIdPattern = /facility-\d+/i;
 const errorMessages = {
   invalidFacility: {
     code: 'invalid_facility',
-    message: 'That facility code was not found.',
+    message: 'That facility ID was not found.',
     recovery: 'Check the QR code or type the facility ID exactly, for example facility-001.',
   },
   userUnavailable: {
@@ -123,15 +123,15 @@ export const createCameraError = (code: CheckInError['code'], message?: string):
     return {
       code,
       message: message ?? 'Camera permission was denied.',
-      recovery: 'Allow camera access in the browser, then start the scanner again. Manual entry still works.',
+      recovery: 'Allow camera access, then start the scanner again. Manual entry still works.',
     };
   }
 
   if (code === 'camera_unavailable') {
     return {
       code,
-      message: message ?? 'No usable camera was found on this device.',
-      recovery: 'Use manual facility-code entry or try a device with a rear camera.',
+      message: message ?? 'Camera access is unavailable on this device.',
+      recovery: 'Use manual facility ID entry or try another device.',
     };
   }
 
@@ -139,13 +139,13 @@ export const createCameraError = (code: CheckInError['code'], message?: string):
     return {
       code,
       message: message ?? 'You are offline.',
-      recovery: 'Manual check-in can still validate bundled facility data. Camera scanning may depend on browser support.',
+      recovery: 'Manual entry can still validate saved facility IDs. Camera scanning may depend on this device.',
     };
   }
 
   return {
     code: 'scanner_error',
     message: message ?? 'The QR scanner could not start.',
-    recovery: 'Refresh, confirm HTTPS is enabled, or use manual entry.',
+    recovery: 'Refresh the app or use manual entry.',
   };
 };

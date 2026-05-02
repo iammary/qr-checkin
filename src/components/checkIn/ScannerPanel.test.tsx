@@ -40,7 +40,7 @@ describe('ScannerPanel', () => {
     renderScannerPanel({ online: false, status: 'active' });
 
     expect(screen.getByText('Scanning')).toBeInTheDocument();
-    expect(screen.getByText('Offline mode is active. Camera scanning may still work in some browsers, but manual entry is the dependable path.')).toBeInTheDocument();
+    expect(screen.getByText('Offline mode is active. Manual entry is the dependable path.')).toBeInTheDocument();
   });
 
   it('stops an enabled scanner', async () => {
